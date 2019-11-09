@@ -9815,3 +9815,11 @@ form .row:first-child .floating-label-form-group {
   text-align: justify;
   margin-bottom: 10px;
 }
+
+.navbar-nav .nav-item {
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #337ab7 !important;
+}
