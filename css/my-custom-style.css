@@ -9843,3 +9843,9 @@ form .row:first-child .floating-label-form-group {
     width: 100%;
     position: absolute;
 }
+
+.badges {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
