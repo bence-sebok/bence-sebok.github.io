@@ -9602,6 +9602,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #0e55b2;
+  border-bottom: 5px solid white;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
@@ -9628,12 +9629,11 @@ a.text-dark:hover, a.text-dark:focus {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #0e55b2;
+    border-bottom: 5px solid white;
   }
 
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
     color: #fff !important;
-    background: #0e55b2;
   }
 
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
