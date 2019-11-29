@@ -9639,7 +9639,7 @@ a.text-dark:hover, a.text-dark:focus {
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
   }
-  #mainNav.navbar-shrink {
+  #mainNav.navbar-shrink { 
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
@@ -9904,4 +9904,103 @@ form .row:first-child .floating-label-form-group {
 
 a:hover {
   text-decoration: none;
+}
+
+.wobble:hover,
+.wobble:active,
+.wobble:focus {
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-name: wobble;
+    animation-timing-function: ease-in-out;
+}
+
+
+/* The animation code */
+
+@keyframes wobble {
+    25% {
+        transform: translateY(-8px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.pulse:hover,
+.pulse:active,
+.pulse:focus {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pulse-small {
+  from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+  50% {
+      -webkit-transform: scale3d(1.0, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse-small:hover,
+.pulse-small:active,
+.pulse-small:focus {
+  -webkit-animation-name: pulse-small;
+  animation-name: pulse-small;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.shadow-hover {
+  box-shadow:20px 20px 50px grey; 
 }
