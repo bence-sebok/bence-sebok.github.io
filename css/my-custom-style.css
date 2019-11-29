@@ -9638,7 +9638,6 @@ a.text-dark:hover, a.text-dark:focus {
 
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #0e55b2;
   }
   #mainNav.navbar-shrink {
     padding-top: 0.5rem;
